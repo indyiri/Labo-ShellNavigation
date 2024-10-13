@@ -2,7 +2,8 @@ namespace SolarSystemApp.Pages;
 
 public partial class AstronomicalBodyPage : ContentPage
 {
-    /* ToDo: Add code to receive data from the queryparameter */
+    /* ToDo: Add code to receive data from the queryparameter
+     * don't forget to call UpdateAstroBodyUI with the name that was passed. */
 
     public AstronomicalBodyPage()
     {

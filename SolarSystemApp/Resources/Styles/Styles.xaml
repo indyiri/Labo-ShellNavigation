@@ -4,6 +4,27 @@
 	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
+    <!--
+    Good, you found where the strange colors are coming from.
+    
+    The colors used in the solution are (all StaticResources!!): OffBlack, White, Gray200, Gray600
+    Try to figure out which property has a certain effect in the UI! 
+    -->
+    <Style TargetType="Shell" ApplyToDerivedTypes="True">
+        <Setter Property="Shell.BackgroundColor" Value="Green" />
+        <Setter Property="Shell.ForegroundColor" Value="Blue" />
+        <Setter Property="Shell.TitleColor" Value="Yellow" />
+        <Setter Property="Shell.DisabledColor" Value="Red" />
+        <Setter Property="Shell.UnselectedColor" Value="Purple" />
+        <Setter Property="Shell.NavBarHasShadow" Value="False" />
+        <Setter Property="Shell.TabBarBackgroundColor" Value="Orange" />
+        <Setter Property="Shell.TabBarForegroundColor" Value="Fuchsia" />
+        <Setter Property="Shell.TabBarTitleColor" Value="LimeGreen" />
+        <Setter Property="Shell.TabBarUnselectedColor" Value="Violet" />
+    </Style>
+    <!--Extra: getting the device top-bar black on Android: check the note in Colors.xaml!-->
+
+
     <Style TargetType="ActivityIndicator">
 		<Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
 	</Style>
@@ -397,18 +418,7 @@
 		<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource OffBlack}}" />
 	</Style>
 
-	<Style TargetType="Shell" ApplyToDerivedTypes="True">
-        <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource OffBlack}, Dark={StaticResource OffBlack}}" />
-		<Setter Property="Shell.ForegroundColor" Value="{OnPlatform WinUI={StaticResource White}, Default={StaticResource White}}" />
-        <Setter Property="Shell.TitleColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource White}}" />
-        <Setter Property="Shell.DisabledColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray200}}" />
-		<Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray200}}" />
-		<Setter Property="Shell.NavBarHasShadow" Value="False" />
-        <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light={StaticResource OffBlack}, Dark={StaticResource OffBlack}}" />
-        <Setter Property="Shell.TabBarForegroundColor" Value="{AppThemeBinding Light=White, Dark={StaticResource White}}" />
-		<Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource White}}" />
-        <Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Light={StaticResource Gray600}, Dark={StaticResource Gray600}}" />
-	</Style>
+
 
 	<Style TargetType="NavigationPage">
 		<Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource OffBlack}}" />

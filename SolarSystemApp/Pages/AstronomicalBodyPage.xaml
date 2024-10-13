@@ -4,6 +4,7 @@
              x:Class="SolarSystemApp.Pages.AstronomicalBodyPage"
              Title="Astronomical Data"
              BackgroundColor="Black">
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <Color x:Key="textColor">White</Color>
@@ -12,10 +13,6 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-
-    <Shell.BackButtonBehavior>
-        <BackButtonBehavior IconOverride="comet_b.png"/>
-    </Shell.BackButtonBehavior>
 
     <Grid RowSpacing="10" ColumnSpacing="10">
         <Grid.ColumnDefinitions>
