@@ -4,9 +4,73 @@
 	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:pages="clr-namespace:SolarSystemApp.Pages"
-	xmlns:local="clr-namespace:SolarSystemApp">
+	xmlns:local="clr-namespace:SolarSystemApp"
+    FlyoutIcon="moon_w.png">
 
-    <ShellContent
-        ContentTemplate="{DataTemplate pages:MoonPhasePage}"/>
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="#0C0C0C" Padding="10">
+            <Image Source="moon_w.png" HeightRequest="70"/>
+        </Grid>
+    </Shell.FlyoutHeader>
+    
+    <FlyoutItem
+        Title="Moon Phase"
+        Icon="moon_b.png">
+
+        <Tab>
+            <ShellContent
+                Title="MoonPhase"
+                ContentTemplate="{DataTemplate pages:MoonPhasePage}"
+                Route="MoonPhase"/>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="Sunrise"
+        Icon="sun.png">
+
+        <Tab>
+            <ShellContent
+                Title="Sunrise"
+                ContentTemplate="{DataTemplate pages:SunrisePage}"
+                Route="Sunrise"/>
+        </Tab>
+    </FlyoutItem>
+
+    <!--<FlyoutItem
+        Title="Astronomical Bodies"
+        Icon="starfield.png">
+
+        <Tab>
+            <ShellContent
+                Title="AstronomicalBodies"
+                ContentTemplate="{DataTemplate pages:AstronomicalBodiesPage}"
+                Route="AstronomicalBodies"/>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="Astronomical Body"
+        Icon="comet.png">
+
+        <Tab>
+            <ShellContent
+                Title="AstronomicalBody"
+                ContentTemplate="{DataTemplate pages:AstronomicalBodyPage}"
+                Route="AstronomicalBody"/>
+        </Tab>
+    </FlyoutItem>-->
+
+    <FlyoutItem
+        Title="About"
+        Icon="question.png">
+
+        <Tab>
+            <ShellContent
+                Title="About"
+                ContentTemplate="{DataTemplate pages:AboutPage}"
+                Route="About"/>
+        </Tab>
+    </FlyoutItem>
 
 </Shell>

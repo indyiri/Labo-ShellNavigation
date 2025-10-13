@@ -11,9 +11,9 @@
     Try to figure out which property has a certain effect in the UI! 
     -->
     <Style TargetType="Shell" ApplyToDerivedTypes="True">
-        <Setter Property="Shell.BackgroundColor" Value="Green" />
-        <Setter Property="Shell.ForegroundColor" Value="Blue" />
-        <Setter Property="Shell.TitleColor" Value="Yellow" />
+        <Setter Property="Shell.BackgroundColor" Value="#0C0C0C" />
+        <Setter Property="Shell.ForegroundColor" Value="White" />
+        <Setter Property="Shell.TitleColor" Value="White" />
         <Setter Property="Shell.DisabledColor" Value="Red" />
         <Setter Property="Shell.UnselectedColor" Value="Purple" />
         <Setter Property="Shell.NavBarHasShadow" Value="False" />
