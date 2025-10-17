@@ -12,8 +12,33 @@
             <Image Source="moon_w.png" HeightRequest="70"/>
         </Grid>
     </Shell.FlyoutHeader>
-    
+
     <FlyoutItem
+        Title="Astronomy"
+        Icon="moon_b.png">
+
+        <Tab
+            Title="Moon Phase"
+            Icon="moon_b.png">
+
+                    <ShellContent
+                Title="MoonPhase"
+                ContentTemplate="{DataTemplate pages:MoonPhasePage}"
+                Route="MoonPhase"/>
+        </Tab>
+        <Tab
+            Title="Sunrise"
+            Icon="sun.png">
+
+                <ShellContent
+                Title="Sunrise"
+                ContentTemplate="{DataTemplate pages:SunrisePage}"
+                Route="Sunrise"/>   
+        </Tab>
+    </FlyoutItem>
+    
+    
+    <!--<FlyoutItem
         Title="Moon Phase"
         Icon="moon_b.png">
 
@@ -35,7 +60,7 @@
                 ContentTemplate="{DataTemplate pages:SunrisePage}"
                 Route="Sunrise"/>
         </Tab>
-    </FlyoutItem>
+    </FlyoutItem>-->
 
     <!--<FlyoutItem
         Title="Astronomical Bodies"

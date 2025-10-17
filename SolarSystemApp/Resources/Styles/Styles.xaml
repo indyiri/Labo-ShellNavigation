@@ -17,10 +17,10 @@
         <Setter Property="Shell.DisabledColor" Value="Red" />
         <Setter Property="Shell.UnselectedColor" Value="Purple" />
         <Setter Property="Shell.NavBarHasShadow" Value="False" />
-        <Setter Property="Shell.TabBarBackgroundColor" Value="Orange" />
-        <Setter Property="Shell.TabBarForegroundColor" Value="Fuchsia" />
-        <Setter Property="Shell.TabBarTitleColor" Value="LimeGreen" />
-        <Setter Property="Shell.TabBarUnselectedColor" Value="Violet" />
+        <Setter Property="Shell.TabBarBackgroundColor" Value="#0C0C0C" />
+        <Setter Property="Shell.TabBarForegroundColor" Value="#FFFFFF" />
+        <Setter Property="Shell.TabBarTitleColor" Value="#FFFFFF" />
+        <Setter Property="Shell.TabBarUnselectedColor" Value="#3A3A3A" />
     </Style>
     <!--Extra: getting the device top-bar black on Android: check the note in Colors.xaml!-->
 
