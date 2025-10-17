@@ -35,7 +35,19 @@
                 ContentTemplate="{DataTemplate pages:SunrisePage}"
                 Route="Sunrise"/>   
         </Tab>
+        <Tab
+            Title="Bodies"
+            Icon="comet_b.png">
+
+            <ShellContent
+                Title="AstronomicalBodies"
+                ContentTemplate="{DataTemplate pages:AstronomicalBodiesPage}"
+                Route="AstronomicalBodies"/>
+        </Tab>
     </FlyoutItem>
+    
+    
+    
     
     
     <!--<FlyoutItem
@@ -64,25 +76,13 @@
 
     <!--<FlyoutItem
         Title="Astronomical Bodies"
-        Icon="starfield.png">
+        Icon="comet.png">
 
         <Tab>
             <ShellContent
                 Title="AstronomicalBodies"
                 ContentTemplate="{DataTemplate pages:AstronomicalBodiesPage}"
                 Route="AstronomicalBodies"/>
-        </Tab>
-    </FlyoutItem>
-
-    <FlyoutItem
-        Title="Astronomical Body"
-        Icon="comet.png">
-
-        <Tab>
-            <ShellContent
-                Title="AstronomicalBody"
-                ContentTemplate="{DataTemplate pages:AstronomicalBodyPage}"
-                Route="AstronomicalBody"/>
         </Tab>
     </FlyoutItem>-->
 
