@@ -1,5 +1,7 @@
+using Microsoft.Maui.Controls;
 namespace SolarSystemApp.Pages;
 
+[QueryProperty(nameof(AstroName), "astro")]
 public partial class AstronomicalBodyPage : ContentPage
 {
     /* ToDo: Add code to receive data from the queryparameter
@@ -8,6 +10,19 @@ public partial class AstronomicalBodyPage : ContentPage
     public AstronomicalBodyPage()
     {
         InitializeComponent();
+    }
+
+
+    private string _astroName = string.Empty;
+    public string AstroName
+    {
+        get => _astroName;
+        set
+        {
+            _astroName = value;
+            if (!string.IsNullOrWhiteSpace(_astroName))
+                UpdateAstroBodyUI(_astroName.ToLowerInvariant());
+        }
     }
 
     void UpdateAstroBodyUI(string astroName)

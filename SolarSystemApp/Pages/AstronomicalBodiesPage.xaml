@@ -23,9 +23,9 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Image Grid.RowSpan="2" Grid.ColumnSpan="2" Source="starfield.png" Aspect="AspectFill"></Image>
-        <Button x:Name="btnEarth" Grid.Row="0" Grid.Column="0" Text="🌎" />
-        <Button x:Name="btnMoon"  Grid.Row="0" Grid.Column="1" Text="🌕" />
-        <Button x:Name="btnSun"   Grid.Row="1" Grid.Column="0" Text="☀️" />
-        <Button x:Name="btnComet" Grid.Row="1" Grid.Column="1" Text="☄" />
+        <Button x:Name="btnEarth" Grid.Row="0" Grid.Column="0" Text="🌎" Clicked="EarthClicked"/>
+        <Button x:Name="btnMoon"  Grid.Row="0" Grid.Column="1" Text="🌕" Clicked="MoonClicked"/>
+        <Button x:Name="btnSun"   Grid.Row="1" Grid.Column="0" Text="☀️" Clicked="SunClicked"/>
+        <Button x:Name="btnComet" Grid.Row="1" Grid.Column="1" Text="☄" Clicked="CometClicked"/>
     </Grid>
 </ContentPage>
